@@ -1,11 +1,12 @@
 import React from 'react'
-
+import Card from '../../components/Cards'
+import Layout from '../../components/Layout'
+import data from '../../db.json'
 function App() {
+  const list = data.items
   return (
     <>
-      <div style={{ display: 'flex', justifyContent: 'center' }}>
-        <h1>Invoicing App</h1>
-      </div>
+      <Layout>{list && list.map((item) => <Card key={item.id} {...item} />)}</Layout>
     </>
   )
 }

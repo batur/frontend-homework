@@ -1,0 +1,24 @@
+.card__header {
+  flex-grow: 0;
+}
+
+.info__list {
+  padding-left: 0;
+  li {
+    margin: 0.2em 0;
+
+    .piece {
+      padding-left: 1em;
+      font-weight: 500;
+    }
+  }
+}
+
+.info__payment {
+  .piece {
+    font-weight: 500;
+  }
+  .title {
+    margin-bottom: 0;
+  }
+}
