@@ -1,15 +1,22 @@
-import React, { useEffect } from 'react'
+import React, { useEffect, useState } from 'react'
 import { connect, useDispatch } from 'react-redux'
 import { getData } from '../../Redux/action'
 import Card from '../../components/Cards'
 import Layout from '../../components/Layout'
 import Modal from '../../components/Modal'
+
 const App = (props) => {
+  //There is data update ERROR
+  const [list, setList] = useState([])
   const dispatch = useDispatch()
-  const list = props.items
   useEffect(() => {
     dispatch(getData())
   }, [dispatch])
+
+  useEffect(() => {
+    setList(props.items)
+  }, [props.items, list])
+
   return (
     <>
       <Layout>

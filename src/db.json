@@ -9,35 +9,22 @@
       "usedSupplies": "none",
       "person": "Marcus",
       "method": "Check",
-      "isPaid": false,
-      "payDay": "05.04.2023",
-      "details": "Lorem Ipsum Sit Amet"
-    },
-    {
-      "id": "a901aae0-96c3-11eb-9e6d-890148a7b74d",
-      "title": "Test Work",
-      "company": "Happy Co.",
-      "serviceType": "Review",
-      "spendTime": "23",
-      "usedSupplies": "none",
-      "person": "Marcus",
-      "method": "Swift",
-      "isPaid": false,
-      "payDay": "05.04.2020",
-      "details": "Lorem Ipsum Sit Amet"
-    },
-    {
-      "id": "b7508a30-96c3-11eb-8ce5-c508a95b2094",
-      "title": "Test Work",
-      "company": "Happy Co.",
-      "serviceType": "Review",
-      "spendTime": "14",
-      "usedSupplies": "none",
-      "person": "Marcus",
-      "method": "Cash",
       "isPaid": true,
-      "payDay": "05.04.2023",
+      "payDay": "2021-04-23",
       "details": "Lorem Ipsum Sit Amet"
+    },
+    {
+      "id": "7027a220-9a96-4c94-81e9-0dcc66c165be",
+      "title": "test",
+      "company": "Brand",
+      "serviceType": "test",
+      "spendTime": "test",
+      "usedSupplies": "test",
+      "person": "test",
+      "method": "stsea",
+      "isPaid": false,
+      "payDay": "2021-04-19",
+      "details": "tasda"
     }
   ]
 }

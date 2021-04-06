@@ -27,7 +27,11 @@ const Reducer = (state = initialState, action) => {
       }
 
     case types.POST_ITEM:
-      break
+      const item = Object.assign({}, action.payload)
+      return {
+        ...state,
+        items: state.items.concat(item),
+      }
 
     default:
       return {
