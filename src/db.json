@@ -12,19 +12,6 @@
       "isPaid": true,
       "payDay": "2021-04-23",
       "details": "Lorem Ipsum Sit Amet"
-    },
-    {
-      "id": "7027a220-9a96-4c94-81e9-0dcc66c165be",
-      "title": "test",
-      "company": "Brand",
-      "serviceType": "test",
-      "spendTime": "test",
-      "usedSupplies": "test",
-      "person": "test",
-      "method": "stsea",
-      "isPaid": false,
-      "payDay": "2021-04-19",
-      "details": "tasda"
     }
   ]
 }
