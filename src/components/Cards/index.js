@@ -43,7 +43,8 @@ function Card({
       <div className={'card-body info pt-2'}>
         <ul className={'info__list list-unstyled'}>
           <li>
-            Operation Time: <span className={'piece'}>{spendTime ? spendTime : 'One Shot'}</span>
+            Operation Time:{' '}
+            <span className={'piece'}>{spendTime ? spendTime + ' h' : 'One Shot'} </span>
           </li>
           <li>
             Used Supplies: <span className={'piece'}>{usedSupplies ? usedSupplies : 'None'}</span>
@@ -70,7 +71,11 @@ function Card({
         </div>
         <div className={'py-2 d-flex justify-content-between'}>
           <Button type={'btn-outline-secondary shadow-sm btn-sm'}>
-            <a href="mailto:test@test.com"> Send Mail</a>
+            <a
+              href={`mailto:contact@${company}.com?subject=${title}/${serviceType}&cc=acdep@brandco.com&body=Hi,%0D%0A%0D%0A  We want to about invoice no.${id}. %0D%0A%0D%0A%0D%0A -Details %0D%0A * Operation Time:${spendTime} %0D%0A * Used Supplies:${usedSupplies} %0D%0A %0D%0A Regards. %0D%0A Have a nice day. %0D%0A %0D%0ABatur Akkurt%0D%0A Brand Co.`}
+            >
+              Send Mail
+            </a>
           </Button>
           <Button type={'btn-outline-warning shadow-sm btn-sm'}>Edit</Button>
           <Button type={'btn-outline-danger shadow-sm btn-sm'}>Move Archive</Button>

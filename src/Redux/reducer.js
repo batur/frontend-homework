@@ -4,12 +4,27 @@ import { initialState } from './state'
 const Reducer = (state = initialState, action) => {
   switch (action.type) {
     case types.FETCH_BEGIN:
-      break
+      return {
+        ...state,
+        isLoading: true,
+        fetchMessage: '',
+      }
     case types.FETCH_SUCCESS:
-      break
+      const data = Object.assign([], action.payload)
+      return {
+        ...state,
+        items: data,
+        isLoading: false,
+        fetchMessage: '',
+      }
 
     case types.FETCH_ERROR:
-      break
+      return {
+        ...state,
+        items: [],
+        isLoading: false,
+        fetchMessage: action.payload,
+      }
 
     case types.POST_ITEM:
       break
