@@ -33,7 +33,11 @@ function Card({
   }
   return (
     <article className={'card shadow-sm item'}>
-      <header className={'card-body pb-1 card__header bg-light shadow-sm'}>
+      <header
+        className={
+          'card-body pb-1 card__header bg-light shadow-sm d-flex flex-column justify-content-between'
+        }
+      >
         <h1 className={'h4 card-title'}>{title}</h1>
         <h2 className={'h5 text-muted'}>{company}</h2>
         <h3 className={'h6'}>{serviceType}</h3>

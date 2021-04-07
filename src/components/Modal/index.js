@@ -23,7 +23,7 @@ function Modal() {
     } else {
       id = uuidv4()
     }
-    //e.preventDefault() **Canceled to makeup for the data update error**
+    e.preventDefault()
     const data = {
       id: id,
       title: title,

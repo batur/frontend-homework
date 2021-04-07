@@ -6,7 +6,6 @@ import Layout from '../../components/Layout'
 import Modal from '../../components/Modal'
 
 const App = (props) => {
-  //There is data update ERROR
   const [list, setList] = useState([])
   const dispatch = useDispatch()
   useEffect(() => {
