@@ -56,7 +56,7 @@ function Card({
             Payment Method: <span className={'piece'}>{method ? method : 'Cash'}</span>
           </li>
         </ul>
-        <div>
+        <div className={'info__details'}>
           <p className={'text-muted'}>{details}</p>
         </div>
         <div className={'info__payment d-flex justify-content-between text-center'}>

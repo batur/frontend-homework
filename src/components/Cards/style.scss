@@ -1,5 +1,11 @@
 .card__header {
-  flex-grow: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+.info {
+  display: flex;
+  flex-direction: column;
 }
 
 .info__list {
@@ -21,4 +27,9 @@
   .title {
     margin-bottom: 0;
   }
+}
+
+.info__details {
+  display: flex;
+  flex-grow: 1;
 }
