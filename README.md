@@ -26,6 +26,8 @@ npm run dev
 
 Run `npm run build` and `npm run serve`, that's it.
 
+Also see demo in [Vercel](https://frontend-homework-two.vercel.app/)
+
 ### Links and Privileges
 
 This project is the clone of the CF Frontend recruitment process.
